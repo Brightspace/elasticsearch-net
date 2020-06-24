@@ -15,8 +15,17 @@ jobs:
             with:
                 dotnet-version: 3.0.100
 
-          - name: Build (Newtonsoft.Json 6.0.6)
+          - name: Build (D2L.NEST.JsonNetSerializer.6_0_6)
             run: dotnet build src/Nest.JsonNetSerializer/D2L.Nest.JsonNetSerializer.6_0_6.csproj --configuration Release
 
-          - name: Build (Newtonsoft.Json 9.0.1)
+          - name: Build (D2L.NEST.JsonNetSerializer.9_0_1)
             run: dotnet build src/Nest.JsonNetSerializer/D2L.Nest.JsonNetSerializer.9_0_1.csproj --configuration Release
+
+          - name: Copy *.nuget to dist/
+            run: mkdir dist/ && cp src/Nest.JsonNetSerializer/bin/Release/*.nupkg dist/
+
+          - name: Archive dist/
+            uses: actions/upload-artifact@v1
+            with:
+                name: dist
+                path: dist/
