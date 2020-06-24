@@ -5,7 +5,6 @@
     <Title>NEST.JsonNetSerializer - Elasticsearch .NET custom Json.NET serializer</Title>
     <PackageTags>elasticsearch,elastic,search,lucene,nest,serializer,json</PackageTags>
     <Description>NEST uses an internal serializer. This package enables serialization for your documents using your own custom Json.NET serializer</Description>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <PropertyGroup>
