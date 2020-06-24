@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "D2L.Nest.JsonNetSerializer.6_0_6", "src\Nest.JsonNetSerializer\D2L.Nest.JsonNetSerializer.6_0_6.csproj", "{BC957D25-4284-4F06-9861-D14618E5268A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "D2L.Nest.JsonNetSerializer.9_0_1", "src\Nest.JsonNetSerializer\D2L.Nest.JsonNetSerializer.9_0_1.csproj", "{C0503BBB-8460-4607-9E90-C61FC9561165}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC957D25-4284-4F06-9861-D14618E5268A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC957D25-4284-4F06-9861-D14618E5268A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC957D25-4284-4F06-9861-D14618E5268A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC957D25-4284-4F06-9861-D14618E5268A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0503BBB-8460-4607-9E90-C61FC9561165}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0503BBB-8460-4607-9E90-C61FC9561165}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0503BBB-8460-4607-9E90-C61FC9561165}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0503BBB-8460-4607-9E90-C61FC9561165}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AFE76D52-605C-45F1-827D-EB11AC5E6A13}
+	EndGlobalSection
+EndGlobal

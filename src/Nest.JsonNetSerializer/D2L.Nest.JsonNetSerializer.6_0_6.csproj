@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
+  <PropertyGroup>
+    <PackageId>D2L.NEST.JsonNetSerializer.6_0_6</PackageId>
+    <Title>NEST.JsonNetSerializer - Elasticsearch .NET custom Json.NET serializer</Title>
+    <PackageTags>elasticsearch,elastic,search,lucene,nest,serializer,json</PackageTags>
+    <Description>NEST uses an internal serializer. This package enables serialization for your documents using your own custom Json.NET serializer</Description>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <IsPackable>true</IsPackable>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <TargetFrameworks>net461</TargetFrameworks>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Nest" Version="$(CurrentVersion)" />
+    <PackageReference Include="Newtonsoft.Json" Version="6.0.6" />
+  </ItemGroup>
+</Project>
