@@ -15,5 +15,8 @@ jobs:
             with:
                 dotnet-version: 3.0.100
 
-          - name: Build
-            run: dotnet build D2L.Nest.JsonNetSerializer.sln --configuration Release
+          - name: Build (6.0.6)
+            run: dotnet build src/Nest.JsonNetSerializer/D2L.Nest.JsonNetSerializer.6_0_6.csproj --configuration Release
+
+          - name: Build (9.0.1)
+            run: dotnet build src/Nest.JsonNetSerializer/D2L.Nest.JsonNetSerializer.9_0_1.csproj --configuration Release
