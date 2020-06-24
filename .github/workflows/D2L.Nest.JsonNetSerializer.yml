@@ -1,0 +1,31 @@
+name: D2L.Nest.JsonNetSerializer
+
+on: [push]
+
+jobs:
+    build:
+        runs-on: windows-latest
+
+        steps:
+
+          - uses: Brightspace/third-party-actions@actions/checkout
+
+          - name: Setup .NET Core
+            uses:  Brightspace/third-party-actions@actions/setup-dotnet
+            with:
+                dotnet-version: 3.0.100
+
+          - name: Build (D2L.NEST.JsonNetSerializer.6_0_6)
+            run: dotnet build src/Nest.JsonNetSerializer/D2L.Nest.JsonNetSerializer.6_0_6.csproj --configuration Release
+
+          - name: Build (D2L.NEST.JsonNetSerializer.9_0_1)
+            run: dotnet build src/Nest.JsonNetSerializer/D2L.Nest.JsonNetSerializer.9_0_1.csproj --configuration Release
+
+          - name: Copy *.nuget to dist/
+            run: mkdir dist/ && cp src/Nest.JsonNetSerializer/bin/Release/*.nupkg dist/
+
+          - name: Archive dist/
+            uses: actions/upload-artifact@v1
+            with:
+                name: dist
+                path: dist/
